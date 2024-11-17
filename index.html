@@ -5,6 +5,558 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Office Space in UAE | Shared Office Space - UAE Office Spaces</title>
 		<link rel="icon" href="./assets/images/icon.png" />
+		<link rel="stylesheet" href="./assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="./assets/css/custom.css" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
 	</head>
-	<body></body>
+	<body>
+		<header>
+			<div class="container mx-auto">
+				<nav class="d-flex justify-content-between align-items-center py-5">
+					<!-- Navbar Logo -->
+					<a href="#">
+						<img src="./assets/images/logo.svg" width="160" height="32" />
+					</a>
+					<!-- Mobile Menu Button -->
+					<div class="mb-auto d-flex d-lg-none align-items-center gap-4" style="margin: -1px -4px">
+						<button class="flex align-items-center justify-content-center flex-column text-center" style="height: 30px; margin-top: -4px">
+							<img src="./assets/images/youtube.svg" alt="Youtube" width="20" height="16" class="py-auto w-100" />
+						</button>
+						<div class="border-0 btn-toggle" type="button" data-target="#mobile-menu">
+							<img src="./assets/images/hamburger.svg" alt="hamburger" width="21" height="16" class="open" />
+							<img src="./assets/images/cross.svg" alt="cross" width="21" height="16" class="close" />
+						</div>
+					</div>
+					<!-- Mobile Menu Content -->
+					<div class="position-fixed" id="mobile-menu">
+						<div class="overflow-y-scroll h-100 p-4">
+							<ul class="mt-6 mb-0 ps-0">
+								<li>
+									<div class="py-3 d-flex justify-content-between align-items-end cursor-pointer btn-toggle" data-target="#license-menu">
+										LICENSING
+										<button class="pe-1" style="margin-bottom: -4px">
+											<img src="./assets/images/dropdown.svg" alt="↓" width="10" height="6" />
+										</button>
+									</div>
+									<div id="license-menu" class="mobile-menu-item pt-1">
+										<div style="padding: 15px 18px" class="rounded-3 bg-secondary">
+											<div class="d-flex justify-content-between">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px">Mainland<br />License</div>
+												<img src="./assets/images/mainland.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+											</div>
+											<div class="mt-5 d-flex gap-2">
+												<div class="secondary-card">PROFESSIONAL LICENSE</div>
+												<div class="secondary-card">COMMERCIAL LICENSE</div>
+												<div class="secondary-card">INDUSTRIAL LICENSE</div>
+												<div class="secondary-card">TOURISM LICENSE</div>
+												<div class="secondary-card">E TRADER LICENSE</div>
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 my-3">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Free Zone License</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Offshore License</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Activities</div>
+											<div class="rounded-3 bg-white mt-1">
+												<div class="py-4 px-5 border-bottom d-flex justify-content-between align-items-center">
+													<div class="fs-15" style="font-weight: 500">Activities</div>
+													<div class="bg-menu-badge rounded-5 cursor-pointer">
+														View All
+														<svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+															<path
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M0.14647 0.146472C0.341764 -0.0488219 0.658398 -0.048822 0.853692 0.146472L5.85451 5.14728C6.0498 5.34258 6.0498 5.65921 5.85451 5.85451C5.65921 6.0498 5.34258 6.0498 5.14728 5.85451L0.14647 0.853693C-0.0488237 0.6584 -0.0488237 0.341766 0.14647 0.146472Z"
+																fill="black"
+															></path>
+															<path
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M-2.18592e-08 5.5009C-3.39318e-08 5.22471 0.223894 5.00081 0.500081 5.00081L5.00081 5.00081L5.00081 0.500083C5.00081 0.223895 5.22471 1.67897e-06 5.50089 1.6669e-06C5.77708 1.65482e-06 6.00098 0.223895 6.00098 0.500083L6.00098 5.5009C6.00098 5.77708 5.77708 6.00098 5.50089 6.00098L0.500081 6.00098C0.223894 6.00098 -9.78672e-09 5.77708 -2.18592e-08 5.5009Z"
+																fill="black"
+															></path>
+														</svg>
+													</div>
+												</div>
+												<div style="padding: 22px 0" id="activities">
+													<div style="padding: 14px 25px">
+														<a href="#">
+															<img src="./assets/images/logistic_license.svg" alt="#" width="22" height="22" />
+															<span class="text-uppercase ms-1">Logistics license</span>
+														</a>
+													</div>
+													<div style="padding: 14px 25px">
+														<a href="#">
+															<img src="./assets/images/restaurant_license.svg" alt="#" width="22" height="22" />
+															<span class="text-uppercase ms-1">Restaurant license</span>
+														</a>
+													</div>
+													<div style="padding: 14px 25px">
+														<a href="#">
+															<img src="./assets/images/goldtrade_license.svg" alt="#" width="22" height="22" />
+															<span class="text-uppercase ms-1">Gold trade license</span>
+														</a>
+													</div>
+													<div style="padding: 14px 25px">
+														<a href="#">
+															<img src="./assets/images/trade_license.svg" alt="#" width="22" height="22" />
+															<span class="text-uppercase ms-1">trade license</span>
+														</a>
+													</div>
+													<div style="padding: 14px 25px">
+														<a href="#">
+															<img src="./assets/images/tourism_license.svg" alt="#" width="22" height="22" />
+															<span class="text-uppercase ms-1">tourism license</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="py-3 d-flex justify-content-between align-items-end cursor-pointer btn-toggle" data-target="#guide-menu">
+										GUIDE
+										<button class="pe-1" style="margin-bottom: -4px">
+											<img src="./assets/images/dropdown.svg" alt="↓" width="10" height="6" />
+										</button>
+									</div>
+									<div id="guide-menu" class="mobile-menu-item pt-1">
+										<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+											<div class="d-flex">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px">Guide</div>
+												<img src="./assets/images/guide.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 mt-3 mb-6">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Where</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">How</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Why</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="py-3 d-flex justify-content-between align-items-end cursor-pointer btn-toggle" data-target="#service-menu">
+										SERVICE
+										<button class="pe-1" style="margin-bottom: -4px">
+											<img src="./assets/images/dropdown.svg" alt="↓" width="10" height="6" />
+										</button>
+									</div>
+									<div id="service-menu" class="mobile-menu-item pt-1">
+										<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+											<div class="d-flex">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px">Service</div>
+												<img src="./assets/images/service.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 mt-3 mb-6">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Trade License-Service</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Open Back Account</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Company Liquidation</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Pro Services</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Brand Protection</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Uae National Sponsorship</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="py-3 d-flex justify-content-between align-items-end cursor-pointer btn-toggle" data-target="#workshop-menu">
+										WORKSHOP
+										<button class="pe-1" style="margin-bottom: -4px">
+											<img src="./assets/images/dropdown.svg" alt="↓" width="10" height="6" />
+										</button>
+									</div>
+									<div id="workshop-menu" class="mobile-menu-item pt-1">
+										<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+											<div class="d-flex">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px">Workshop</div>
+												<img src="./assets/images/workshop.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 mt-3 mb-6">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Business centres</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Virtual Office</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Flex desks</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Rent a cabin</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">rent an office</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">find an office space</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="py-3 d-flex justify-content-between align-items-end cursor-pointer btn-toggle" data-target="#accounting-menu">
+										Accounting
+										<button class="pe-1" style="margin-bottom: -4px">
+											<img src="./assets/images/dropdown.svg" alt="↓" width="10" height="6" />
+										</button>
+									</div>
+									<div id="accounting-menu" class="mobile-menu-item pt-1">
+										<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+											<div class="d-flex">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px">Accounting</div>
+												<img src="./assets/images/accounting.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 mt-3 mb-6">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Vat registration</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Accounting and bookkeeping</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Auditing services</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Var return filing</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">cfo services</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="py-3 d-flex justify-content-between align-items-end cursor-pointer btn-toggle" data-target="#visa-menu">
+										VISA
+										<button class="pe-1" style="margin-bottom: -4px">
+											<img src="./assets/images/dropdown.svg" alt="↓" width="10" height="6" />
+										</button>
+									</div>
+									<div id="visa-menu" class="mobile-menu-item pt-1">
+										<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+											<div class="d-flex">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px">Accounting</div>
+												<img src="./assets/images/visa.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 mt-3 mb-6">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai-investor visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">uae-investor visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai employment visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai-family residence visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai tourist visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai freelance visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai maid visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai-business visa</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="py-3 d-flex justify-content-between align-items-end cursor-pointer btn-toggle" data-target="#company-menu">
+										Company
+										<button class="pe-1" style="margin-bottom: -4px">
+											<img src="./assets/images/dropdown.svg" alt="↓" width="10" height="6" />
+										</button>
+									</div>
+									<div id="company-menu" class="mobile-menu-item pt-1">
+										<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+											<div class="d-flex">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px">Company</div>
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 mt-3 mb-6">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">about us</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">blog</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Desktop Menu -->
+					<ul class="d-none d-lg-flex ps-0 mx-2 gap-xl-5 gap-lg-2">
+						<li class="desk-menu-item btn-hover" data-target="#license-desk-menu">
+							licensing
+							<div class="desk-menu-content menu-lg" id="license-desk-menu">
+								<div class="d-flex gap-6 align-items-center" style="margin-left: -15px">
+									<div class="col-6">
+										<div class="d-flex justify-content-between align-items-center mb-3">
+											<span class="fs-18 text-secondary" style="text-transform: none">Licensing</span>
+											<a>
+												<img src="./assets/images/rightup.svg" alt="#" width="48" height="32" />
+											</a>
+										</div>
+										<div style="padding: 15px 18px" class="rounded-3 bg-secondary">
+											<div class="d-flex justify-content-between py-3">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px; text-transform: none">Mainland<br />License</div>
+												<img src="./assets/images/mainland.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+											</div>
+											<div class="mt-5 d-flex gap-2 flex-wrap">
+												<div class="secondary-card">PROFESSIONAL LICENSE</div>
+												<div class="secondary-card">COMMERCIAL LICENSE</div>
+												<div class="secondary-card">INDUSTRIAL LICENSE</div>
+												<div class="secondary-card">TOURISM LICENSE</div>
+												<div class="secondary-card">E TRADER LICENSE</div>
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 my-3">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Free Zone License</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Offshore License</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Activities</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="rounded-3 bg-white">
+											<div class="py-4 px-5 border-bottom d-flex justify-content-between align-items-center">
+												<div class="fs-15" style="font-weight: 500">Activities</div>
+												<div class="bg-menu-badge rounded-5 cursor-pointer">
+													View All
+													<svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none">
+														<path
+															fill-rule="evenodd"
+															clip-rule="evenodd"
+															d="M0.14647 0.146472C0.341764 -0.0488219 0.658398 -0.048822 0.853692 0.146472L5.85451 5.14728C6.0498 5.34258 6.0498 5.65921 5.85451 5.85451C5.65921 6.0498 5.34258 6.0498 5.14728 5.85451L0.14647 0.853693C-0.0488237 0.6584 -0.0488237 0.341766 0.14647 0.146472Z"
+															fill="black"
+														></path>
+														<path
+															fill-rule="evenodd"
+															clip-rule="evenodd"
+															d="M-2.18592e-08 5.5009C-3.39318e-08 5.22471 0.223894 5.00081 0.500081 5.00081L5.00081 5.00081L5.00081 0.500083C5.00081 0.223895 5.22471 1.67897e-06 5.50089 1.6669e-06C5.77708 1.65482e-06 6.00098 0.223895 6.00098 0.500083L6.00098 5.5009C6.00098 5.77708 5.77708 6.00098 5.50089 6.00098L0.500081 6.00098C0.223894 6.00098 -9.78672e-09 5.77708 -2.18592e-08 5.5009Z"
+															fill="black"
+														></path>
+													</svg>
+												</div>
+											</div>
+											<div style="padding: 22px 0" id="activities">
+												<div style="padding: 14px 25px">
+													<a href="#" class="d-flex align-items-center justify-content-between">
+														<div>
+															<img src="./assets/images/logistic_license.svg" alt="#" width="22" height="22" />
+															<span class="text-uppercase ms-1">Logistics license</span>
+														</div>
+														<img src="./assets/images/rightupsimple.svg" alt="↑" width="9" height="9" />
+													</a>
+												</div>
+												<div style="padding: 14px 25px">
+													<a href="#" class="d-flex align-items-center justify-content-between">
+														<div>
+															<img src="./assets/images/restaurant_license.svg" alt="#" width="22" height="22" />
+															<span class="text-uppercase ms-1">Restaurant license</span>
+														</div>
+														<img src="./assets/images/rightupsimple.svg" alt="↑" width="9" height="9" />
+													</a>
+												</div>
+												<div style="padding: 14px 25px">
+													<a href="#" class="d-flex align-items-center justify-content-between">
+														<div>
+															<img src="./assets/images/goldtrade_license.svg" alt="#" width="22" height="22" />
+															<span class="text-uppercase ms-1">Gold trade license</span>
+														</div>
+														<img src="./assets/images/rightupsimple.svg" alt="↑" width="9" height="9" />
+													</a>
+												</div>
+												<div style="padding: 14px 25px">
+													<a href="#" class="d-flex align-items-center justify-content-between">
+														<div>
+															<img src="./assets/images/trade_license.svg" alt="#" width="22" height="22" />
+															<span class="text-uppercase ms-1">trade license</span>
+														</div>
+														<img src="./assets/images/rightupsimple.svg" alt="↑" width="9" height="9" />
+													</a>
+												</div>
+												<div style="padding: 14px 25px">
+													<a href="#" class="d-flex align-items-center justify-content-between">
+														<div>
+															<img src="./assets/images/tourism_license.svg" alt="#" width="22" height="22" />
+															<span class="text-uppercase ms-1">tourism license</span>
+														</div>
+														<img src="./assets/images/rightupsimple.svg" alt="↑" width="9" height="9" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="desk-menu-item btn-hover" data-target="#guide-desk-menu">
+							guide
+							<div class="desk-menu-content menu-md" id="guide-desk-menu">
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<span class="fs-18 text-secondary" style="text-transform: none">Guide</span>
+									<a>
+										<img src="./assets/images/rightup.svg" alt="#" width="48" height="32" />
+									</a>
+								</div>
+								<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+									<div class="d-flex justify-content-between py-3 align-items-center">
+										<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px; text-transform: none">Where</div>
+										<img src="./assets/images/guide.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+									</div>
+								</div>
+								<div class="d-flex flex-column gap-2 mt-3 mb-6">
+									<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">How</div>
+									<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Why</div>
+								</div>
+							</div>
+						</li>
+						<li class="desk-menu-item btn-hover" data-target="#service-desk-menu">
+							service
+							<div class="desk-menu-content menu-lg" id="service-desk-menu">
+								<div class="d-flex gap-6 align-items-center" style="margin-left: -15px">
+									<div class="col-6">
+										<div class="d-flex justify-content-between align-items-center mb-3">
+											<span class="fs-18 text-secondary" style="text-transform: none">Service</span>
+											<a>
+												<img src="./assets/images/rightup.svg" alt="#" width="48" height="32" />
+											</a>
+										</div>
+										<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+											<div class="d-flex justify-content-between py-3">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px; text-transform: none">
+													Trade License- <br />
+													Service
+												</div>
+												<img src="./assets/images/service.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 mt-3 mb-6">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Open Back Account</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Company Liquidation</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="d-flex flex-column gap-2">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Pro Services</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Brand Protection</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Uae National Sponsorship</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="desk-menu-item btn-hover" data-target="#workshop-desk-menu">
+							workspace
+							<div id="workshop-desk-menu" class="desk-menu-content menu-lg">
+								<div class="d-flex gap-6 align-items-center" style="margin-left: -15px">
+									<div class="col-6">
+										<div class="d-flex justify-content-between align-items-center mb-3">
+											<span class="fs-18 text-secondary" style="text-transform: none">Service</span>
+											<a>
+												<img src="./assets/images/rightup.svg" alt="#" width="48" height="32" />
+											</a>
+										</div>
+										<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+											<div class="d-flex justify-content-between py-3">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px; text-transform: none">
+													Business<br />
+													centres
+												</div>
+												<img src="./assets/images/workshop.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 mt-3 mb-6">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Virtual Office</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Flex desks</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="d-flex flex-column gap-2">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Rent a cabin</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">rent an office</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">find an office space</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="desk-menu-item btn-hover" data-target="#accounting-desk-menu">
+							accounting
+							<div id="accounting-desk-menu" class="desk-menu-content menu-lg">
+								<div class="d-flex gap-6 align-items-center" style="margin-left: -15px">
+									<div class="col-6">
+										<div class="d-flex justify-content-between align-items-center mb-3">
+											<span class="fs-18 text-secondary" style="text-transform: none">Accounting</span>
+											<a>
+												<img src="./assets/images/rightup.svg" alt="#" width="48" height="32" />
+											</a>
+										</div>
+										<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+											<div class="d-flex justify-content-between py-3">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px; text-transform: none">
+													Vat <br />
+													registration
+												</div>
+												<img src="./assets/images/accounting.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 mt-3 mb-6">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Accounting and bookkeeping</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Auditing services</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="d-flex flex-column gap-2">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Var return filing</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">cfo services</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="desk-menu-item btn-hover" data-target="#visa-desk-menu">
+							visa
+							<div id="visa-desk-menu" class="desk-menu-content menu-lg">
+								<div class="d-flex gap-6 align-items-center" style="margin-left: -15px">
+									<div class="col-6">
+										<div class="d-flex justify-content-between align-items-center mb-3">
+											<span class="fs-18 text-secondary" style="text-transform: none">Visa</span>
+											<a>
+												<img src="./assets/images/rightup.svg" alt="#" width="48" height="32" />
+											</a>
+										</div>
+										<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+											<div class="d-flex justify-content-between py-3 align-items-center">
+												<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px; text-transform: none">
+													Dubai-Investor<br />
+													Visa
+												</div>
+												<img src="./assets/images/visa.webp" alt="Mainland" width="70" height="60" class="rounded-1" />
+											</div>
+										</div>
+										<div class="d-flex flex-column gap-2 mt-3 mb-6">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">uae-investor visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai employment visa</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="d-flex flex-column gap-4">
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai-family residence visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai tourist visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai freelance visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai maid visa</div>
+											<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">dubai-business visa</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="desk-menu-item btn-hover" data-target="#company-desk-menu">
+							company
+							<div class="desk-menu-content menu-md" id="company-desk-menu">
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<span class="fs-18 text-secondary" style="text-transform: none">Company</span>
+								</div>
+								<div class="rounded-3 bg-secondary" style="padding: 15px 18px">
+									<div class="d-flex justify-content-between py-3 align-items-center">
+										<div class="text-white fs-4" style="letter-spacing: 0.48px; line-height: 30px; text-transform: none">About Us</div>
+									</div>
+								</div>
+								<div class="d-flex flex-column gap-2 mt-6 mb-3">
+									<div class="py-3 px-2 text-uppercase bg-white rounded-3 fs-12">Blog</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="d-none d-lg-flex gap-3">
+						<button class="btn-primary-hover p-xl-3 p-lg-2 border rounded-3 transition-2 fs-14-16">
+							<img src="./assets/images/youtube.svg" alt="#" width="20" height="16" />
+							Watch
+						</button>
+						<button class="btn-primary-hover p-xl-3 p-lg-2 border rounded-3 transition-2 fs-14-16">
+							<img src="./assets/images/supprot.svg" alt="#" width="20" height="16" />
+							Support
+						</button>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="vh-100"></div>
+		</main>
+		<footer></footer>
+		<script src="./assets/js/bootstrap.bundle.min.js"></script>
+		<script src="./assets/js/custom.js"></script>
+	</body>
 </html>
