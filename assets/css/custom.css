@@ -327,6 +327,10 @@ button {
 	color: red;
 }
 
+#package-section {
+	padding: 0 80px;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -407,6 +411,10 @@ button {
 	.schedule-title {
 		font-size: 64px;
 		line-height: 64px;
+	}
+
+	#package-section {
+		padding: 0 150px;
 	}
 }
 
