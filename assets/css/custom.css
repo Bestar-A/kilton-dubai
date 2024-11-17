@@ -10,6 +10,10 @@
 	cursor: pointer;
 }
 
+p {
+	margin-bottom: 0;
+}
+
 a {
 	padding: 0 !important;
 	text-decoration: none !important;
@@ -311,6 +315,16 @@ button {
 .animate-pulse {
 	will-change: margin-bottom;
 	animation: pulseAnimation 1.5s infinite alternate ease-in-out 0.9s;
+}
+
+.btn-date {
+	transition: all 0.25s;
+}
+
+.btn-date.active,
+.btn-date:hover {
+	background-color: #fff0f0;
+	color: red;
 }
 
 @keyframes pulseAnimation {
