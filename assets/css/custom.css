@@ -2,6 +2,10 @@
 	font-family: "Inter", sans-serif;
 }
 
+section {
+	overflow: hidden !important;
+}
+
 .font-pompiere {
 	font-family: "Pompiere", sans-serif;
 }
