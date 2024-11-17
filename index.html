@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="./assets/css/custom.css" />
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pompiere" />
 	</head>
 	<body>
 		<header>
@@ -29,7 +30,7 @@
 						</div>
 					</div>
 					<!-- Mobile Menu Content -->
-					<div class="position-fixed" id="mobile-menu">
+					<div class="position-fixed" id="mobile-menu" style="z-index: 999">
 						<div class="overflow-y-scroll h-100 p-4">
 							<ul class="mt-6 mb-0 ps-0">
 								<li>
@@ -552,9 +553,147 @@
 				</nav>
 			</div>
 		</header>
-		<main>
-			<div class="vh-100"></div>
-		</main>
+		<section id="home-banner-section" class="d-flex overflow-hidden">
+			<div class="container">
+				<div class="row" style="margin-left: -30px; margin-right: -30px">
+					<div class="col-12 col-md-6 px-6 order-1">
+						<div class="home-banner-wrapper position-relative">
+							<img src="./assets/images/deco.svg" alt="#" class="position-absolute" style="left: 0; transform: translate(-100%, 30%)" />
+							<div class="fs-26-36 font-pompiere">Turn Passion into Profit</div>
+							<div class="home-banner-title lh-sm">Start Your Entrepreneurial Journey</div>
+							<div class="home-banner-btn d-flex gap-4">
+								<button class="btn btn-info btn-secondary-hover transition-2">Yes, Today</button>
+								<button class="btn btn-secondary btn-info-hover transition-2">Explore Licenses</button>
+							</div>
+							<div class="home-banner-subtitle"><b>Business Setup</b> in Dubai</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 p-0 order-0 order-md-2 d-flex position-relative" style="perspective: 800px; height: 450px">
+						<div class="animate-turn show mx-auto position-absolute">
+							<img src="./assets/images/home-turn-img1.webp" alt="#" width="400" height="406" class="object-fit-contain home-turn-img" />
+							<img src="./assets/images/home-turn-character1.webp" alt="#" width="500" height="963" class="object-fit-contain position-absolute home-turn-character animate-pulse" />
+							<div class="py-2 px-4 rounded-pill position-absolute text-white home-turn-title d-flex align-items-center gap-1">
+								<span class="me-2">Restaurant</span>
+								<div class="active-dot"></div>
+								<div class="inactive-dot"></div>
+								<div class="inactive-dot"></div>
+								<div class="inactive-dot"></div>
+							</div>
+							<div
+								class="pt-7 pb-4 px-4 rounded-5 position-absolute home-turn-description text-white animate-pulse"
+								style="background: linear-gradient(309deg, rgba(255, 0, 63, 0.74) 48.01%, rgba(200, 15, 81, 0.39) 119.28%)"
+							>
+								<div class="fs-15">Want to setup <br /><b>Restaurant in Dubai</b></div>
+								<div class="d-flex gap-2 mt-3">
+									<button class="btn-transparent btn-anim text-white rounded-2" style="padding: 2px 6px">Schedule Meeting</button>
+									<button class="rounded-2 btn-transparent">
+										<img src="./assets/images/meeting.svg" alt="#" width="32" height="30" style="width: 24px; height: 24px" />
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="animate-turn mx-auto position-absolute">
+							<img src="./assets/images/home-turn-img2.webp" alt="#" width="400" height="406" class="object-fit-contain home-turn-img" />
+							<img src="./assets/images/home-turn-character2.webp" alt="#" width="500" height="963" class="object-fit-contain position-absolute animate-pulse home-turn-character" />
+							<div class="py-2 px-4 rounded-pill position-absolute text-white home-turn-title d-flex align-items-center gap-1">
+								<span class="me-2">Industrial</span>
+								<div class="inactive-dot"></div>
+								<div class="active-dot"></div>
+								<div class="inactive-dot"></div>
+								<div class="inactive-dot"></div>
+							</div>
+							<div
+								class="pt-7 pb-4 px-4 rounded-5 position-absolute home-turn-description text-white animate-pulse"
+								style="background: linear-gradient(309deg, rgba(255, 107, 0, 0.74) 48.01%, rgba(255, 177, 144, 0.39) 119.28%)"
+							>
+								<div class="fs-15">
+									Looking for an <br /><b>Industrial License in <br />Dubai?</b>
+								</div>
+								<div class="d-flex gap-2 mt-3">
+									<button class="btn-transparent btn-anim text-white rounded-2" style="padding: 2px 6px">Schedule Meeting</button>
+									<button class="rounded-2 btn-transparent">
+										<img src="./assets/images/meeting.svg" alt="#" width="32" height="30" style="width: 24px; height: 24px" />
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="animate-turn mx-auto position-absolute">
+							<img src="./assets/images/home-turn-img3.webp" alt="#" width="400" height="406" class="object-fit-contain home-turn-img" />
+							<img src="./assets/images/home-turn-character3.webp" alt="#" width="500" height="963" class="object-fit-contain animate-pulse position-absolute home-turn-character" />
+							<div class="py-2 px-4 rounded-pill position-absolute text-white home-turn-title d-flex align-items-center gap-1">
+								<span class="me-2">Ecommerce</span>
+								<div class="inactive-dot"></div>
+								<div class="inactive-dot"></div>
+								<div class="active-dot"></div>
+								<div class="inactive-dot"></div>
+							</div>
+							<div
+								class="pt-7 pb-4 px-4 rounded-5 position-absolute home-turn-description text-white animate-pulse"
+								style="background: linear-gradient(309deg, rgba(82, 0, 255, 0.74) 48.01%, rgba(15, 89, 200, 0.39) 119.28%)"
+							>
+								<div class="fs-15">
+									Register an <br /><b
+										>Ecommerce License in <br />
+										Dubai?</b
+									>
+								</div>
+								<div class="d-flex gap-2 mt-3">
+									<button class="btn-transparent btn-anim text-white rounded-2" style="padding: 2px 6px">Schedule Meeting</button>
+									<button class="rounded-2 btn-transparent">
+										<img src="./assets/images/meeting.svg" alt="#" width="32" height="30" style="width: 24px; height: 24px" />
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="animate-turn mx-auto position-absolute">
+							<img src="./assets/images/home-turn-img4.webp" alt="#" width="400" height="406" class="object-fit-contain home-turn-img" />
+							<img src="./assets/images/home-turn-character4.webp" alt="#" width="500" height="963" class="animate-pulse object-fit-contain position-absolute home-turn-character" />
+							<div class="py-2 px-4 rounded-pill position-absolute text-white home-turn-title d-flex align-items-center gap-1">
+								<span class="me-2">Fruit Trading</span>
+								<div class="active-dot"></div>
+								<div class="inactive-dot"></div>
+								<div class="inactive-dot"></div>
+								<div class="inactive-dot"></div>
+							</div>
+							<div
+								class="pt-7 pb-4 px-4 rounded-5 position-absolute home-turn-description text-white animate-pulse"
+								style="background: linear-gradient(309deg, rgba(118, 188, 29, 0.74) 48.01%, rgba(180, 226, 81, 0.39) 119.28%)"
+							>
+								<div class="fs-15">
+									Begin a<b> Fruit Retail <br />Business in Dubai</b>
+								</div>
+								<div class="d-flex gap-2 mt-3">
+									<button class="btn-transparent btn-anim text-white rounded-2" style="padding: 2px 6px">Schedule Meeting</button>
+									<button class="rounded-2 btn-transparent">
+										<img src="./assets/images/meeting.svg" alt="#" width="32" height="30" style="width: 24px; height: 24px" />
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="schedule-meeting-section">
+			<div class="mx-auto container row justify-content-center">
+				<div class="col-12 col-lg-9">
+					<div class="row m-0">
+						<div class="col-12 col-md-7 px-3">
+							<div class="d-flex gap-3">
+								<img src="./assets/images/schedule.svg" alt="#" width="90" height="73" />
+								<div>
+									<div class="text-secondary schedule-title">Schedule Meeting</div>
+									<div class="mt-6">Start Your Entrepreneurial Journey</div>
+								</div>
+							</div>
+							<div class="d-flex gap-6"></div>
+						</div>
+						<div class="col-12 col-md-5 px-3">Calendar</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="vh-100"></section>
 		<footer></footer>
 		<script src="./assets/js/bootstrap.bundle.min.js"></script>
 		<script src="./assets/js/custom.js"></script>

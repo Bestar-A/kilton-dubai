@@ -25,3 +25,21 @@ hoverElements.forEach((elem) => {
 		targetElem.classList.remove("active");
 	});
 });
+
+const turnElements = document.querySelectorAll(".animate-turn");
+let currentTurn = -1;
+
+const updateTurn = (currentTurn) => {
+	turnElements.forEach((elem) => elem.classList.remove("show"));
+	turnElements[currentTurn].classList.add("show");
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+	const turnRound = () => {
+		currentTurn++;
+		currentTurn %= 4;
+		updateTurn(currentTurn);
+		setTimeout(turnRound, 5000);
+	};
+	turnRound();
+});
