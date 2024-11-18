@@ -501,6 +501,37 @@ button {
 	font-weight: 500;
 }
 
+.cta-wrapper {
+	padding: 40px 30px;
+	align-items: center;
+	font-weight: 500;
+}
+
+.cta-title {
+	color: #005f7f;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.cta-subtitle {
+	color: #005f7f;
+	font-size: 18px;
+	line-height: 24.84px;
+	margin-bottom: 20px;
+}
+
+.cta-schedule-btn {
+	border-radius: 35px;
+	background-color: #252139;
+	color: #fff0f0;
+	padding: 10px 16px;
+	transition: 0.25s;
+}
+
+.cta-schedule-btn:hover {
+	background-color: #005f7f;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -535,6 +566,15 @@ button {
 
 /* -------------- md --------------- */
 @media (min-width: 768px) {
+	.cta-title {
+		font-size: 34px;
+		line-height: 39.1px;
+	}
+
+	.cta-wrapper {
+		padding: 50px 50px;
+	}
+
 	.activity-type-title {
 		font-size: 44px;
 		line-height: 64.4px;
@@ -615,6 +655,16 @@ button {
 
 /* -------------- lg --------------- */
 @media (min-width: 992px) {
+	.cta-schedule-btn {
+		padding: 16px 30px;
+		font-size: 20px;
+		line-height: 21.4px;
+	}
+
+	.cta-wrapper {
+		padding: 90px 70px;
+	}
+
 	#mobile-menu.show {
 		display: none;
 	}
