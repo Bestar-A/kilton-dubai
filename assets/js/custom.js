@@ -65,3 +65,23 @@ licenseItems.forEach((item, k) => {
 		licenseImgs[k].classList.add("active");
 	});
 });
+
+// Const Smoothly Appear Elements
+document.addEventListener("DOMContentLoaded", function () {
+	const sections = document.querySelectorAll(".appear");
+
+	function checkSectionInView() {
+		sections.forEach((section) => {
+			const rect = section.getBoundingClientRect();
+			if (rect.top <= window.innerHeight) {
+				section.classList.add("active");
+			} else {
+				section.classList.remove("active");
+			}
+			console.log(window.innerHeight, rect.top);
+		});
+	}
+
+	window.addEventListener("scroll", checkSectionInView);
+	checkSectionInView();
+});
