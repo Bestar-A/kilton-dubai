@@ -532,6 +532,90 @@ button {
 	background-color: #005f7f;
 }
 
+#edge-section {
+	padding: 30px 0 50px;
+}
+
+.edge-title {
+	color: #252139;
+	font-size: 28px;
+	line-height: normal;
+	margin-bottom: 8px;
+}
+
+.edge-subtitle {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.edge-btn {
+	color: #252139;
+	font-size: 12.8px;
+	line-height: 19.84px;
+	border-radius: 19.2px;
+	border: 1px solid #252139;
+	padding: 10px 30px;
+	margin-top: 22px;
+	transition: 0.25s;
+}
+
+.edge-btn:hover {
+	background-color: #252139;
+	color: white;
+}
+
+.edge-first-block,
+.edge-second-block,
+.edge-third-block {
+	height: 225px;
+	padding: 0 40px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	background-blend-mode: color-dodge, normal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	box-shadow: 0 0 2px 1px rgba(101, 81, 243, 0.2);
+}
+
+.edge-block-text {
+	font-size: 24px;
+	line-height: 23px;
+	letter-spacing: 0.16px;
+	color: white;
+}
+
+.edge-first-block {
+	background-image: linear-gradient(112deg, #ae4800 14.48%, #ed8e56 110.15%);
+}
+
+.edge-second-block {
+	background-image: linear-gradient(112deg, #252139 14.48%, #7e6bff 110.15%);
+}
+
+.edge-third-block {
+	background-image: linear-gradient(101deg, #252139 36.41%, #8ac5ff 141.12%);
+}
+
+.edge-detail-title {
+	color: #252139;
+	font-size: 16.8px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 19.2px;
+}
+
+.edge-detail-description {
+	color: #252139;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -566,6 +650,16 @@ button {
 
 /* -------------- md --------------- */
 @media (min-width: 768px) {
+	.edge-title {
+		font-size: 44px;
+		line-height: 64.4px;
+		font-weight: 500;
+	}
+
+	#edge-section {
+		padding: 120px 0;
+	}
+
 	.cta-title {
 		font-size: 34px;
 		line-height: 39.1px;
@@ -655,6 +749,11 @@ button {
 
 /* -------------- lg --------------- */
 @media (min-width: 992px) {
+	.edge-detail-description {
+		font-size: 16px;
+		line-height: 28px;
+	}
+
 	.cta-schedule-btn {
 		padding: 16px 30px;
 		font-size: 20px;
