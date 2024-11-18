@@ -52,3 +52,16 @@ youtubeSliderItems.forEach((item) => {
 		item.classList.add("slide-show");
 	});
 });
+
+// License Section
+const licenseItems = document.querySelectorAll(".license-item");
+const licenseImgs = document.querySelectorAll(".license-img");
+
+licenseItems.forEach((item, k) => {
+	item.addEventListener("mouseover", () => {
+		licenseItems.forEach((i) => i.classList.remove("active"));
+		item.classList.add("active");
+		licenseImgs.forEach((i) => i.classList.remove("active"));
+		licenseImgs[k].classList.add("active");
+	});
+});

@@ -409,6 +409,88 @@ button {
 	right: 0px;
 }
 
+.license-img {
+	display: none;
+}
+
+.license-img.active {
+	display: block;
+}
+
+.license-item {
+	padding: 8px 0;
+}
+
+.license-title {
+	color: #252139;
+	font-size: 32px;
+	line-height: 107%;
+	margin-right: 30px;
+	font-weight: 500;
+}
+
+.license-item.active .license-title {
+	color: #037095;
+	font-size: 32px;
+	font-weight: 531;
+	line-height: 98%;
+	transition: color 0.25s, font-size 0.25s, line-height 0.25s, font-weight 0.25s;
+}
+
+.license-description {
+	display: none;
+	opacity: 0;
+	width: 100%;
+}
+
+.license-item.active .license-description {
+	display: block;
+	opacity: 1;
+}
+
+.license-description-wrapper {
+	position: inherit;
+}
+
+.license-type-title-wrapper {
+	text-align: center;
+}
+
+.license-type-title {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.license-type-subtitle {
+	line-height: 28px;
+	font-weight: 400;
+}
+
+.license-button-title {
+	width: 150px;
+	color: white;
+	transition: 0.25s;
+	font-size: 20px;
+	line-height: 22px;
+}
+
+.license-button {
+	background-color: #252139;
+	transition: all 0.5s cubic-bezier(0.17, 0.67, 0.21, 1);
+}
+
+.license-button .license-button-title {
+	color: white;
+}
+
+.license-button:hover {
+	background-color: #c8f1ff;
+}
+
+.license-button:hover .license-button-title {
+	color: black;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -443,6 +525,16 @@ button {
 
 /* -------------- md --------------- */
 @media (min-width: 768px) {
+	.license-type-title {
+		font-size: 44px;
+		font-weight: 500;
+		line-height: 64.4px;
+	}
+
+	.license-type-title-wrapper {
+		text-align: left;
+	}
+
 	#home-banner-section {
 		padding-top: 30px;
 		padding-bottom: 85px;
@@ -466,6 +558,39 @@ button {
 
 	.youtube-slide-btn-wrapper {
 		top: 0px;
+	}
+
+	.license-item {
+		height: 150px;
+	}
+
+	.license-description-wrapper {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.license-title {
+		font-size: 44px;
+	}
+
+	.license-item.active .license-title {
+		font-size: 65px;
+	}
+
+	.license-item {
+		padding: 0;
+	}
+
+	.license-description {
+		display: block;
+		opacity: 0;
+		width: 80%;
+	}
+
+	.license-item.active .license-description {
+		display: block;
+		opacity: 1;
 	}
 }
 
