@@ -43,3 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	};
 	turnRound();
 });
+
+const youtubeSliderItems = document.querySelectorAll("#youtube-slider-content .slide-item");
+
+youtubeSliderItems.forEach((item) => {
+	item.addEventListener("mouseover", () => {
+		youtubeSliderItems.forEach((i) => i.classList.remove("slide-show"));
+		item.classList.add("slide-show");
+	});
+});

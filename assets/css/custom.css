@@ -335,6 +335,80 @@ button {
 	padding: 0 80px;
 }
 
+.section-badge {
+	background-color: rgba(3, 90, 120, 0.05);
+	padding: 10px 32px;
+	gap: 7px;
+	width: fit-content;
+	font-size: 15px;
+	line-height: normal;
+	font-variant: normal;
+}
+
+.relative-middle {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.youtube-character-img {
+	opacity: 0;
+	object-fit: cover;
+	vertical-align: middle;
+	transition: opacity 0.25s ease;
+	height: 250px;
+}
+
+.slide-show .youtube-character-img {
+	opacity: 1;
+}
+
+.youtube-img-title {
+	font-size: 36px;
+	line-height: 110%;
+	font-weight: 500;
+	opacity: 1;
+}
+
+.slide-show .youtube-img-title {
+	opacity: 0;
+}
+
+.youtube-img-subtitle {
+	background: linear-gradient(314deg, rgba(37, 33, 57, 0.74) 39.06%, rgba(89, 82, 125, 0.74) 119.17%);
+	backdrop-filter: blur(6.5px);
+	width: calc(100% - 60px);
+	left: 30px;
+	right: 30px;
+	bottom: 20px;
+	border-radius: 15px;
+	padding: 12px 20px;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+
+.slide-show .youtube-img-subtitle {
+	opacity: 1;
+}
+
+.youtube-subtitle-main {
+	font-size: 14px;
+	color: #f0f5f4;
+	line-height: 107%;
+	font-weight: 500;
+	margin-left: -6px;
+}
+
+.youtube-subtitle-view {
+	font-size: 12px;
+	line-height: 125%;
+}
+
+.youtube-slide-btn-wrapper {
+	top: 50px;
+	right: 0px;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -344,6 +418,7 @@ button {
 	}
 }
 
+/* -------------- sm --------------- */
 @media (min-width: 576px) {
 	#home-banner-section {
 		padding-top: 10px;
@@ -366,6 +441,7 @@ button {
 	}
 }
 
+/* -------------- md --------------- */
 @media (min-width: 768px) {
 	#home-banner-section {
 		padding-top: 30px;
@@ -383,8 +459,17 @@ button {
 	.animate-turn {
 		left: 0;
 	}
+
+	.youtube-subtitle-main {
+		margin-left: 0px;
+	}
+
+	.youtube-slide-btn-wrapper {
+		top: 0px;
+	}
 }
 
+/* -------------- lg --------------- */
 @media (min-width: 992px) {
 	#mobile-menu.show {
 		display: none;
@@ -422,6 +507,7 @@ button {
 	}
 }
 
+/* -------------- xl --------------- */
 @media (min-width: 1200px) {
 	.container {
 		max-width: 1140px !important;
@@ -455,6 +541,7 @@ button {
 	}
 }
 
+/* -------------- xxl --------------- */
 @media (min-width: 1350px) {
 	.container {
 		max-width: 1300px !important;
@@ -463,6 +550,14 @@ button {
 	#home-banner-section {
 		padding-top: 55px;
 		padding-bottom: 55px;
+	}
+
+	.youtube-subtitle-main {
+		font-size: 24px;
+	}
+
+	.youtube-subtitle-view {
+		font-size: 15px;
 	}
 }
 
@@ -486,6 +581,7 @@ button {
 	}
 }
 
+/* -------------- Xl --------------- */
 @media (min-width: 1650px) {
 	#home-banner-section {
 		padding-top: 85px;
