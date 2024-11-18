@@ -491,6 +491,16 @@ button {
 	color: black;
 }
 
+.activity-type-wrapper {
+	padding: 40px 22px;
+}
+
+.activity-type-title {
+	margin-bottom: 8px;
+	font-size: 28px;
+	font-weight: 500;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -525,6 +535,15 @@ button {
 
 /* -------------- md --------------- */
 @media (min-width: 768px) {
+	.activity-type-title {
+		font-size: 44px;
+		line-height: 64.4px;
+	}
+
+	.activity-type-wrapper {
+		padding: 70px 40px;
+	}
+
 	.license-type-title {
 		font-size: 44px;
 		font-weight: 500;
