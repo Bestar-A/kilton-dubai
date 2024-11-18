@@ -616,6 +616,28 @@ button {
 	line-height: 23px;
 }
 
+.appear {
+	transition: all 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0.1s;
+}
+
+.appear-up {
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+.appear-up.active {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.appear-opacity {
+	opacity: 0;
+}
+
+.appear-opacity.active {
+	opacity: 1;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
