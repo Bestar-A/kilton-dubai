@@ -638,6 +638,22 @@ button {
 	opacity: 1;
 }
 
+.blog-title {
+	background-color: rgba(3, 90, 120, 0.05);
+	border-radius: 24px;
+	font-size: 15px;
+	padding: 10px 32px;
+}
+
+.blog-main-title {
+	color: #252139;
+	font-size: 36px;
+	text-align: center;
+	line-height: 107%;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -667,6 +683,10 @@ button {
 		width: 217px;
 		height: 300px;
 		bottom: 18px;
+	}
+
+	.blog-main-title {
+		font-size: 40px;
 	}
 }
 
@@ -771,6 +791,10 @@ button {
 
 /* -------------- lg --------------- */
 @media (min-width: 992px) {
+	.blog-main-title {
+		font-size: 60px;
+	}
+
 	.edge-detail-description {
 		font-size: 16px;
 		line-height: 28px;
