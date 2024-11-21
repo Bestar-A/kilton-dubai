@@ -855,6 +855,74 @@ button {
 	margin-top: 8px;
 }
 
+#faq-section {
+	padding: 60px 0;
+}
+
+.faq-container {
+	padding: 0 20px;
+}
+
+.faq-intro {
+	color: #f0f5f4;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	border-radius: 24px;
+	background: #474165;
+	padding: 12px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.faq-title {
+	font-style: normal;
+	font-weight: 500;
+	line-height: 107%;
+	text-align: center;
+	color: #f0f5f4;
+	font-size: 32px;
+	margin: 15px 0 40px;
+}
+
+.faq-list-content {
+	color: white;
+	display: none;
+}
+
+.faq-list-title {
+	color: #f0f5f4;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20.784px;
+	width: 100%;
+	padding: 15px 0;
+	border-bottom: 1px solid rgba(150, 142, 190, 0.29);
+}
+
+.faq-list-title:nth-last-child() {
+	border-bottom: 0px !important;
+}
+
+.faq-list-content.active {
+	display: block;
+}
+
+.faq-list-content {
+	padding: 1rem;
+	color: white;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+	transition: 0.5s;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -866,6 +934,25 @@ button {
 
 /* -------------- sm --------------- */
 @media (min-width: 576px) {
+	.faq-list-title {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 23.784px;
+		padding: 30px 0;
+	}
+
+	.faq-title {
+		font-size: 48px;
+	}
+
+	.faq-container {
+		padding: 0 50px;
+	}
+
+	#faq-section {
+		padding: 100px 0;
+	}
+
 	#testimonial-section {
 		padding-bottom: 80px;
 	}
