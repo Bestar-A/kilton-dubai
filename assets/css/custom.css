@@ -752,6 +752,10 @@ button {
 	background-color: #252139;
 }
 
+#testimonial-section {
+	padding-bottom: 50px;
+}
+
 .view-all-stories-btn {
 	border-radius: 7px;
 	display: flex;
@@ -824,6 +828,33 @@ button {
 	line-height: 171%;
 }
 
+.partners-content {
+	background-color: white;
+	border-radius: 15px;
+	padding: 30px 20px;
+}
+
+.partners-content-subtitle {
+	color: #252139;
+	text-align: center;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 146%;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+}
+
+.partners-content-title {
+	color: #005f7f;
+	text-align: center;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 107%;
+	margin-top: 8px;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -835,6 +866,18 @@ button {
 
 /* -------------- sm --------------- */
 @media (min-width: 576px) {
+	#testimonial-section {
+		padding-bottom: 80px;
+	}
+
+	.partners-content-title {
+		font-size: 32px;
+	}
+
+	.partners-content {
+		padding: 70px;
+	}
+
 	.view-all-stories-btn,
 	.hire-kiltons-btn {
 		padding: 20px 26px;
