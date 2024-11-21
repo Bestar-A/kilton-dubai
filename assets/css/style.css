@@ -1,0 +1,437 @@
+/* ---------------------------------- Base Styles ---------------------------------- */
+
+* {
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+section {
+	overflow: hidden; /* Ensure no overflow on sections */
+}
+
+/* ---------------------------------- Typography ---------------------------------- */
+
+.font-pompiere {
+	font-family: "Pompiere", sans-serif; /* Special font class */
+}
+
+p {
+	margin-bottom: 0; /* No bottom margin for paragraphs */
+}
+
+a {
+	padding: 0 !important; /* No padding for links */
+	text-decoration: none !important; /* Remove underline */
+	color: inherit; /* Inherit font color */
+}
+
+ul {
+	list-style: none; /* No bullet points for lists */
+	margin-bottom: 0; /* No bottom margin */
+}
+
+/* ---------------------------------- Utility Classes ---------------------------------- */
+
+.cursor-pointer {
+	cursor: pointer; /* Pointer cursor for clickable items */
+}
+
+button {
+	border: 0; /* No border */
+	padding: 0; /* No padding */
+	background-color: transparent; /* No background */
+}
+
+.container {
+	max-width: 95%; /* Maximum width for containers */
+	padding: 0;
+}
+
+/* ---------------------------------- Navbar Toggler ---------------------------------- */
+
+.navbar-toggler-icon {
+	width: 21px;
+	height: 16px; /* Dimensions for toggler icon */
+}
+
+/* ---------------------------------- Mobile Menu ---------------------------------- */
+
+#mobile-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(140deg, rgba(234, 229, 255, 0.75) 22.65%, #fff 127.18%);
+	backdrop-filter: blur(12.7px);
+	transition: all 0.5s ease-in-out;
+	border-top-left-radius: 21px;
+	height: 0; /* Initial height */
+	max-height: 0; /* Prevent overflow */
+	overflow: hidden; /* Hide overflow */
+}
+
+#mobile-menu.active {
+	top: 76px; /* Position when active */
+	height: calc(100vh - 76px); /* Full height minus nav bar */
+	max-height: 100vh; /* Maximum height */
+}
+
+#mobile-menu li {
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0.26px;
+	line-height: normal;
+	border-bottom: 0.5px solid #b8b8b8; /* Separator between menu items */
+}
+
+/* ---------------------------------- Button States ---------------------------------- */
+
+.btn-toggle .open,
+.btn-toggle.opened .close {
+	display: block; /* Show when opened */
+}
+
+.btn-toggle .close,
+.btn-toggle.opened .open {
+	display: none; /* Hide default */
+}
+
+/* ---------------------------------- Card Styles ---------------------------------- */
+
+.secondary-card {
+	background-color: #3f3862;
+	padding: 8px 15px;
+	border-radius: 28px;
+	color: #fff8fa;
+	font-size: 10px;
+	line-height: 10px;
+	font-weight: 500;
+}
+
+/* ---------------------------------- Font Sizes ---------------------------------- */
+
+.fs-12 {
+	font-size: 12px;
+}
+.fs-14 {
+	font-size: 14px;
+}
+.fs-15 {
+	font-size: 15px;
+}
+.fs-16 {
+	font-size: 16px;
+}
+.fs-18 {
+	font-size: 18px;
+}
+.fs-14-16 {
+	font-size: 14px;
+}
+.fs-26-36 {
+	font-size: 26px;
+}
+
+/* ---------------------------------- Background Styles ---------------------------------- */
+
+.bg-menu-badge {
+	padding: 8px 16px;
+	background-color: rgba(3, 90, 120, 0.05); /* Light background */
+}
+
+/* ---------------------------------- Activity Styles ---------------------------------- */
+
+#activities a {
+	line-height: 24px;
+	font-size: 14px;
+}
+
+/* ---------------------------------- Button Styles ---------------------------------- */
+
+.btn {
+	padding: 16px 20px;
+	border-radius: 10px;
+}
+
+/* Info Button */
+.btn-info,
+.btn-info-hover:hover {
+	color: #037297;
+	background-color: #c8f1ff;
+	border-color: #c8f1ff;
+}
+
+.btn-primary-hover:hover {
+	background-color: #252139;
+	color: white;
+}
+
+.btn-secondary-hover:hover {
+	border-color: #252139;
+	background-color: #252139;
+	color: white;
+}
+
+.btn-transparent {
+	border: 4px solid hsla(0, 0%, 100%, 0.15);
+	background-color: hsla(0, 0%, 100%, 0.12);
+}
+
+/* ---------------------------------- Transition Effects ---------------------------------- */
+
+.transition-2 {
+	transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* ---------------------------------- Responsive Design ---------------------------------- */
+
+/* -------------- sm --------------- */
+@media (min-width: 576px) {
+	#home-banner-section {
+		padding-top: 10px;
+		padding-bottom: 85px; /* Increased padding for small screens */
+	}
+	.home-banner-title {
+		font-size: 40px; /* Font size for banner on small screens */
+	}
+	.home-turn-img {
+		width: 360px; /* Adjusted image size */
+		height: 365px;
+	}
+	.home-turn-character {
+		width: 217px; /* Character size in home section */
+		height: 300px;
+		bottom: 18px;
+	}
+	.blog-main-title {
+		font-size: 40px; /* Blog title size */
+	}
+}
+
+/* -------------- md --------------- */
+@media (min-width: 768px) {
+	.edge-title {
+		font-size: 44px; /* Title size adjustment */
+		line-height: 64.4px;
+		font-weight: 500;
+	}
+	#edge-section {
+		padding: 120px 0; /* Padding for edge section */
+	}
+	.cta-title {
+		font-size: 34px; /* Call to action title size */
+		line-height: 39.1px;
+	}
+	.cta-wrapper {
+		padding: 50px 50px; /* Padding for CTA wrapper */
+	}
+	.activity-type-title {
+		font-size: 44px; /* Adjusted activity title size */
+		line-height: 64.4px;
+	}
+	.activity-type-wrapper {
+		padding: 70px 40px; /* Padding adjustments */
+	}
+	.license-type-title {
+		font-size: 44px; /* License title size */
+		font-weight: 500;
+		line-height: 64.4px;
+	}
+	.license-type-title-wrapper {
+		text-align: left; /* Align title to left */
+	}
+	#home-banner-section {
+		padding-top: 30px;
+		padding-bottom: 85px; /* Adjusted padding */
+	}
+	.home-banner-subtitle {
+		margin: 60px 0 0; /* Adjusted margin for subtitle */
+	}
+	.schedule-title {
+		font-size: 44px; /* Schedule title size */
+	}
+	.animate-turn {
+		left: 0; /* Adjusted animation left position */
+	}
+	.youtube-subtitle-main {
+		margin-left: 0; /* Reset margin for subtitle */
+	}
+	.youtube-slide-btn-wrapper {
+		top: 0; /* Adjusted button wrapper position */
+	}
+	.license-item {
+		height: 150px; /* Height for license items */
+	}
+	.license-description-wrapper {
+		position: relative;
+		top: 50%; /* Centering */
+		transform: translateY(-50%);
+	}
+	.license-title {
+		font-size: 44px; /* License title size */
+	}
+	.license-item.active .license-title {
+		font-size: 65px; /* Active title size */
+	}
+	.license-item {
+		padding: 0; /* Reset padding */
+	}
+	.license-description {
+		display: block;
+		opacity: 0;
+		width: 80%; /* Set width for description */
+	}
+	.license-item.active .license-description {
+		display: block;
+		opacity: 1; /* Fade in active description */
+	}
+}
+
+/* -------------- lg --------------- */
+@media (min-width: 992px) {
+	.blog-main-title {
+		font-size: 60px; /* Blog title for large screens */
+	}
+	.edge-detail-description {
+		font-size: 16px; /* Adjust description font size */
+		line-height: 28px;
+	}
+	.cta-schedule-btn {
+		padding: 16px 30px;
+		font-size: 20px;
+		line-height: 21.4px; /* CTA button size */
+	}
+	.cta-wrapper {
+		padding: 90px 70px; /* Increased padding for CTA wrapper */
+	}
+	#mobile-menu.show {
+		display: none; /* Hide mobile menu when not needed */
+	}
+	.fs-26-36 {
+		font-size: 36px; /* Font size adjustment */
+	}
+	.home-banner-title {
+		font-size: 36px; /* Home banner title size */
+	}
+	.home-banner-btn {
+		margin-top: 40px; /* Adjusted button margin */
+	}
+	.home-turn-img {
+		width: 400px; /* Sizing adjustments for images */
+		height: 407px;
+	}
+	#schedule-meeting-section {
+		padding-top: 130px; /* Adjust meeting section padding */
+		padding-bottom: 130px;
+	}
+	.schedule-title {
+		font-size: 64px; /* Adjust title size */
+		line-height: 64px;
+	}
+	#package-section {
+		padding: 0 150px; /* Padding adjustment for package section */
+	}
+}
+
+/* -------------- xl --------------- */
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px !important; /* Set max width for containers */
+	}
+	.fs-14-16 {
+		font-size: 16px; /* Size adjustment for font */
+	}
+	#home-banner-section {
+		padding-top: 45px; /* Adjust padding for home banner */
+	}
+	.home-banner-title {
+		font-size: 55px; /* Home banner title size adjustment */
+	}
+	.home-banner-wrapper {
+		margin-left: 100px; /* Margin adjustments */
+	}
+	.home-turn-img {
+		width: 500px; /* Sizing for images */
+		height: 507px;
+	}
+	.home-turn-character {
+		width: 317px;
+		height: 400px; /* Adjust character size */
+		bottom: 40px;
+	}
+}
+
+/* -------------- xxl --------------- */
+@media (min-width: 1350px) {
+	.container {
+		max-width: 1300px !important; /* Set max width for large containers */
+	}
+	#home-banner-section {
+		padding-top: 55px; /* Increased padding for home banner */
+		padding-bottom: 55px;
+	}
+	.youtube-subtitle-main {
+		font-size: 24px; /* Subtitle size adjustment */
+	}
+	.youtube-subtitle-view {
+		font-size: 15px; /* Size adjustments */
+	}
+}
+
+@media (min-width: 1536px) {
+	.container {
+		max-width: 1380px !important; /* Adjusting container size */
+	}
+	.menu-lg {
+		width: 1380px; /* Set width for large menu */
+		padding: 50px 80px; /* Menu padding */
+	}
+	.menu-md {
+		width: 690px; /* Medium menu width */
+		padding: 50px; /* Menu padding */
+	}
+	.home-banner-title {
+		font-size: 72px; /* Title adjustment */
+	}
+}
+
+/* -------------- Xl --------------- */
+@media (min-width: 1650px) {
+	#home-banner-section {
+		padding-top: 85px; /* Further padding adjustments */
+		padding-bottom: 85px;
+	}
+}
+
+/* ---------------------------------- Animation ---------------------------------- */
+
+@keyframes pulseAnimation {
+	0% {
+		margin-bottom: 0px;
+	}
+	100% {
+		margin-bottom: 10px; /* Pulsing effect */
+	}
+}
+
+/* ---------------------------------- Blog Styles ---------------------------------- */
+
+.blog-title {
+	background-color: rgba(3, 90, 120, 0.05);
+	border-radius: 24px; /* Rounded corners */
+	font-size: 15px; /* Title size */
+	padding: 10px 32px;
+}
+
+.blog-main-title {
+	color: #252139; /* Main title color */
+	font-size: 36px; /* Title size */
+	text-align: center; /* Centered text */
+	line-height: 107%;
+	font-weight: 500; /* Font weight */
+	margin-bottom: 20px; /* Spacing below title */
+}
