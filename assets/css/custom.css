@@ -19,7 +19,7 @@ p {
 }
 
 a {
-	padding: 0 !important;
+	padding: 0;
 	text-decoration: none !important;
 	color: inherit;
 }
@@ -718,6 +718,61 @@ button {
 	font-size: 20px;
 }
 
+.stories-video-list {
+	padding: 40px 0 20px;
+}
+
+.stories-img-block {
+	border-radius: 15px;
+	padding: 35px;
+}
+
+.stories-video-description {
+	font-size: 18px;
+}
+
+.hire-kiltons-btn {
+	border-radius: 7px;
+	background-color: #ec3361;
+	transition: 0.25s;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 304px;
+	color: #fff;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding: 16px 15px;
+	font-size: 14px;
+	height: auto;
+}
+
+.hire-kiltons-btn:hover {
+	background-color: #252139;
+}
+
+.view-all-stories-btn {
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 304px;
+	color: #fff;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	background-color: #252139;
+	transition: 0.25s;
+	padding: 16px 15px;
+	font-size: 14px;
+	height: auto;
+}
+
+.view-all-stories-btn:hover {
+	background-color: #ec3361;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -729,6 +784,17 @@ button {
 
 /* -------------- sm --------------- */
 @media (min-width: 576px) {
+	.view-all-stories-btn,
+	.hire-kiltons-btn {
+		padding: 20px 26px;
+		height: 70px;
+		font-size: 18px;
+	}
+
+	.stories-video-list {
+		padding: 50px 0 20px;
+	}
+
 	#stories-section {
 		padding: 160px 0 80px;
 	}
@@ -770,6 +836,10 @@ button {
 
 /* -------------- md --------------- */
 @media (min-width: 768px) {
+	.stories-video-list {
+		padding: 80px 0 20px;
+	}
+
 	.edge-title {
 		font-size: 44px;
 		line-height: 64.4px;
@@ -869,6 +939,14 @@ button {
 
 /* -------------- lg --------------- */
 @media (min-width: 992px) {
+	.stories-video-description {
+		font-size: 20px;
+	}
+
+	.stories-img-block {
+		padding: 58px;
+	}
+
 	.stories-section-title {
 		font-size: 38px;
 	}
