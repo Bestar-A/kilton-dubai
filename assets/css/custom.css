@@ -773,6 +773,57 @@ button {
 	background-color: #ec3361;
 }
 
+.testimonial-card {
+	padding: 28px 18px;
+	margin: 0 auto 30px;
+	position: relative;
+	border-radius: 10px;
+	background: white;
+	min-height: auto;
+}
+
+.testimonial-card:hover {
+	background: linear-gradient(0deg, #f8fcfb 1.94%, #fff 32.38%, #f8fcfb 64.15%);
+	border-radius: 13px;
+}
+
+.user-name {
+	width: 40px;
+	height: 40px;
+	background: #ff5e00;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.user-info-name {
+	color: #252139;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 134%;
+}
+
+.user-info-date {
+	color: #59818e;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%;
+}
+
+.testimonial-content {
+	color: #2c2c2c;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 171%;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -836,6 +887,9 @@ button {
 
 /* -------------- md --------------- */
 @media (min-width: 768px) {
+	.testimonial-card {
+		min-height: 320px;
+	}
 	.stories-video-list {
 		padding: 80px 0 20px;
 	}
