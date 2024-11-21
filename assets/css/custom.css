@@ -923,6 +923,12 @@ button {
 	transition: 0.5s;
 }
 
+footer {
+	padding: 60px 0 0;
+	background-color: #f5f8f7;
+	overflow: hidden;
+}
+
 @keyframes pulseAnimation {
 	0% {
 		margin-bottom: 0px;
@@ -934,6 +940,10 @@ button {
 
 /* -------------- sm --------------- */
 @media (min-width: 576px) {
+	footer {
+		padding: 100px 0 0;
+	}
+
 	.faq-list-title {
 		font-size: 16px;
 		font-weight: 500;
